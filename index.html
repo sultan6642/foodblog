@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="footer.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <script type="text/javascript" src="js/bootstrap.min.js"></script>
+
+  <title>Home</title>
+</head>
+
+<style>
+  .col-md-6 {
+    transition: transform 500ms ease-in-out 25ms;
+  }
+
+  .col-md-6:hover {
+    transform: translateX(10px) translateY(20px);
+  }
+</style>
+
+<body>
+  <!-- Navigation Bar -->
+
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">FoodBlog</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02"
+        aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="recent.html">Resent Blogs</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contact</a>
+          </li>
+        </ul>
+        <form class="d-flex">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+        <div class="mx-2">
+          <button class="btn btn-success" data-bs-toggle="modal" data-bs-target="#loginModal">Login</button>
+          <button class="btn btn-success" data-bs-toggle="modal" data-bs-target="#signupModal">SignUp</button>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!--Login Modal -->
+  <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="loginModalLabel">Login</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label">Email address</label>
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+              <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+            </div>
+            <div class="mb-3">
+              <label for="exampleInputPassword1" class="form-label">Password</label>
+              <input type="password" class="form-control" id="exampleInputPassword1">
+            </div>
+            <div class="mb-3 form-check">
+              <input type="checkbox" class="form-check-input" id="exampleCheck1">
+              <label class="form-check-label" for="exampleCheck1">Check me out</label>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--SignUp Modal -->
+  <div class="modal fade" id="signupModal" tabindex="-1" aria-labelledby="signupModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="signupModalLabel">SignUp</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="mb-3">
+              <label for="formGroupExampleInput" class="form-label">First Name</label>
+              <input type="text" class="form-control" id="formGroupExampleInput" placeholder="">
+            </div>
+            <div class="mb-3">
+              <label for="formGroupExampleInput2" class="form-label">Last Name</label>
+              <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="">
+            </div>
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label">Email address</label>
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+              <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+            </div>
+            <div class="mb-3">
+              <label for="exampleInputPassword1" class="form-label">Password</label>
+              <input type="password" class="form-control" id="exampleInputPassword1">
+            </div>
+            <div class="mb-3">
+              <label for="exampleInputPassword1" class="form-label">Confirm Password</label>
+              <input type="password" class="form-control" id="cexampleInputPassword1">
+            </div>
+            <button type="submit" class="btn btn-primary">Create Account</button>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Carousel -->
+
+  <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="https://source.unsplash.com/1600x670/?pizza" class="d-block w-100 " alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="https://source.unsplash.com/1600x670/?drinks" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="https://source.unsplash.com/1600x670/?food " class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="https://source.unsplash.com/1600x670/?burger" class="d-block w-100" alt="...">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+  <!-- CARDS -->
+
+  <div class="container my-4 ">
+
+    <p class="text-center fs-3"><b><u>Food Blogs</u></b></p>
+
+    <div class="row mb-2">
+
+      <div class="col-md-6">
+        <div
+          class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative  shadow-lg p-3 mb-5 bg-body rounded">
+          <div class="col p-4 d-flex flex-column position-static">
+            <strong class="d-inline-block mb-2 text-primary"></strong>
+            <h3 class="mb-0">The Recipe Critic</h3>
+            <div class="mb-1 text-muted">Nov 12</div>
+            <p class="card-text mb-auto">Welcome to my kitchen! I am Alyssa Rivers and the food blogger behind The Recipe Critic. The blog launched in 2012 as a place to share my passion for cooking.</p>
+            <a href=" " target="_blank" class="stretched-link">Continue reading</a>
+          </div>
+          <div class="col-auto d-none d-lg-block">
+            <img src="https://source.unsplash.com/200x250/?food" class="bd-placeholder-img" width="200" height="250">
+
+
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6">
+        <div
+          class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative  shadow-lg p-3 mb-5 bg-body rounded">
+          <div class="col p-4 d-flex flex-column position-static">
+            <strong class="d-inline-block mb-2 text-success"></strong>
+            <h3 class="mb-0">I Am Baker</h3>
+            <div class="mb-1 text-muted">Nov 11</div>
+            <p class="mb-auto">I’m Amanda Rettke, resident baker, blogger, wife, and mother behind I Am Baker. You could also say I’m the resident icing piper, cookie decorator, and cake decorator… </p>
+            <a href="https://iambaker.net/" target="_blank" class="stretched-link">Continue reading</a>
+          </div>
+          <div class="col-auto d-none d-lg-block">
+            <img src="https://source.unsplash.com/200x250/?food and drinks" class="bd-placeholder-img" width="200" height="250">
+
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row mb-2">
+
+      <div class="col-md-6">
+        <div
+          class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative  shadow-lg p-3 mb-5 bg-body rounded">
+          <div class="col p-4 d-flex flex-column position-static">
+            <strong class="d-inline-block mb-2 text-primary"></strong>
+            <h3 class="mb-0">Love & Lemons</h3>
+            <div class="mb-1 text-muted">Nov 12</div>
+            <p class="card-text mb-auto">Welcome to Love and Lemons! My name is Jeanine, and I created Love and Lemons to celebrate how nourishing, fun, and delicious cooking with seasonal fruits ....</p>
+            <a href="https://www.loveandlemons.com/" target="_blank" class="stretched-link">Continue reading</a>
+          </div>
+          <div class="col-auto d-none d-lg-block">
+            <img src="https://source.unsplash.com/200x250/?food blogs" class="bd-placeholder-img" width="200" height="250">
+
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6">
+        <div
+          class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative  shadow-lg p-3 mb-5 bg-body rounded">
+          <div class="col p-4 d-flex flex-column position-static">
+            <strong class="d-inline-block mb-2 text-success"></strong>
+            <h3 class="mb-0">Damn Delicious</h3>
+            <div class="mb-1 text-muted">Nov 11</div>
+            <p class="mb-auto">Damn Delicious® was simply a hobby, but now it’s my full-time job.
+
+              Coming from a very traditional Korean household, I was destined to be one of three things....</p>
+            <a href="https://damndelicious.net/" target="_blank" class="stretched-link">Continue reading</a>
+          </div>
+          <div class="col-auto d-none d-lg-block">
+            <img src="https://source.unsplash.com/200x250/?pizza" class="bd-placeholder-img" width="200" height="250">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row mb-2">
+
+      <div class="col-md-6">
+        <div
+          class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative  shadow-lg p-3 mb-5 bg-body rounded">
+          <div class="col p-4 d-flex flex-column position-static">
+            <strong class="d-inline-block mb-2 text-primary"></strong>
+            <h3 class="mb-0">Spend With Pennies</h3>
+            <div class="mb-1 text-muted">Nov 12</div>
+            <p class="card-text mb-auto">Easy home cooked comfort.
+              Welcome to Spend With Pennies! Here you will find deliciously simple recipes for the every day home cook...</p>
+            <a href="https://www.spendwithpennies.com/" target="_blank" class="stretched-link">Continue reading</a>
+          </div>
+          <div class="col-auto d-none d-lg-block">
+            <img src="https://source.unsplash.com/200x250/?burger" class="bd-placeholder-img" width="200" height="250">
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6">
+        <div
+          class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative  shadow-lg p-3 mb-5 bg-body rounded">
+          <div class="col p-4 d-flex flex-column position-static">
+            <strong class="d-inline-block mb-2 text-success"></strong>
+            <h3 class="mb-0">Just One Cookbook</h3>
+            <div class="mb-1 text-muted">Nov 11</div>
+            <p class="mb-auto">Just One Cookbook is here to help you cook delicious Japanese food with easy to follow step by step tutorial. Meet the team behind Just One Cookbook...</p>
+            <a href="https://www.justonecookbook.com/" target="_blank" class="stretched-link">Continue reading</a>
+          </div>
+          <div class="col-auto d-none d-lg-block">
+            <img src="https://source.unsplash.com/200x250/?pasta" class="bd-placeholder-img" width="200" height="250">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+
+  <footer class="footer">
+    <div class="footer-left col-md-4 col-sm-6">
+      <p class="about">
+        <span> About the Blogs</span> Ut congue augue non tellus bibendum, in varius tellus condimentum. In scelerisque
+        nibh tortor, sed rhoncus odio condimentum in. Sed sed est ut sapien ultrices eleifend. Integer tellus est,
+        vehicula eu lectus tincidunt,
+        ultricies feugiat leo. Suspendisse tellus elit, pharetra in hendrerit ut, aliquam quis augue. Nam ut nibh
+        mollis, tristique ante sed, viverra massa.
+      </p>
+      <div class="icons">
+
+        <a href="https://www.facebook.com/people/Sultan-Khan/100021116736754/" target="_blank"
+          class="fa fa-facebook"></a>
+        <a href="https://www.instagram.com/psultan2002/?utm_medium=copy_link" target="_blank"
+          class="fa fa-instagram"></a>
+
+
+      </div>
+    </div>
+
+    <div class="footer-right col-md-4 col-sm-6">
+      <!-- <h2> Company<span> logo</span></h2>
+      <p class="menu">
+        <a href="#"> Home</a> |
+        <a href="#"> About</a> |
+        <a href="#"> Services</a> |
+        <a href="#"> Portfolio</a> |
+        <a href="#"> News</a> |
+        <a href="#"> Contact</a>
+      </p>
+      <p class="name"> Company Name &copy; 2016</p> -->
+    </div>
+
+    <div class="footer-center col-md-4 col-sm-6">
+      <div>
+        <i class="fa fa-map-marker"></i>
+        <p><span> B-2 ,Sultana park ,fatehwadi </span> Ahmedabad, Gujarat</p>
+      </div>
+      <div>
+        <i class="fa fa-phone"></i>
+        <p> (+91) 9601382718</p>
+      </div>
+      <div>
+        <i class="fa fa-envelope"></i>
+        <p><a href="#"> puvesh2002@gmail.com</a></p>
+      </div>
+    </div>
+
+  </footer>
+
+</html>

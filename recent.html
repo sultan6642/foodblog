@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="footer.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+
+    <title>Recent Blogs</title>
+</head>
+
+<style>
+    /* .row:hover:before,
+    .row:hover:after {
+        transform: translate(0,0);
+        opacity: 1;
+    }
+    <span class="text-muted"> </span>
+    */
+    .row {
+        transition: transform 500ms ease-in-out 25ms;
+    }
+
+    .row:hover {
+        transform: translateX(10px) translateY(20px);
+    }
+
+    .bodys {
+        background-image: url('https://source.unsplash.com/1600x660/?food');
+    }
+
+    .a1,
+    .a2,
+    .a3 {
+        color: #595959;
+        text-decoration: none;
+    }
+
+    a:hover {
+        color: black;
+    }
+</style>
+
+<body>
+
+    <!-- Navigation Bar -->
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">FoodBlog</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02"
+                aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="recent.html">Resent Blogs</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+                <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Recent Blogs -->
+
+    <div class="container my-4 ">
+
+
+
+        <p class="text-center fs-3"><b><u>Recent Blogs</u></b></p>
+
+        <!-- 1 blog -->
+        <div
+            class="row featurette d-flex justify-content-center align-items-center my-4 shadow-lg p-3 mb-5 bg-body rounded">
+            <div class="col-md-7 ">
+                <a href="https://therecipecritic.com/" target="_blank" class="a1">
+                    <h2 class="featurette-heading">The Recipe Critic</h2>
+                    <p class="lead">Welcome to my kitchen! I am Alyssa Rivers and the food blogger behind The Recipe Critic. The blog launched in 2012 as a place to share my passion for cooking.</p>
+                </a>
+            </div>
+            <div class="col-md-5 bg-image ">
+                <img src="https://source.unsplash.com/500x300/?food"
+                    class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto " alt="...">
+
+            </div>
+        </div>
+        <!-- 2 blog -->
+        <div
+            class="row featurette d-flex justify-content-center align-items-center my-4 shadow-lg p-3 mb-5 bg-body rounded">
+            <div class="col-md-7 order-md-2 ">
+                <a href="https://iambaker.net/" target="_blank" class="a2">
+                    <h2 class="featurette-heading">I Am Baker</h2>
+                    <p class="lead">I’m Amanda Rettke, resident baker, blogger, wife, and mother behind I Am Baker. You could also say I’m the resident icing piper, cookie decorator, and cake decorator… </p>
+                </a>
+            </div>
+            <div class="col-md-5 order-md-1 ">
+
+                <img src="https://source.unsplash.com/500x300/?food and drinks"
+                    class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto " alt="...">
+            </div>
+        </div>
+        <!-- 3 blog -->
+        <div
+            class="row featurette d-flex justify-content-center align-items-center my-4  shadow-lg p-3 mb-5 bg-body rounded">
+            <div class="col-md-7 ">
+                <a href="https://www.loveandlemons.com/" target="_blank" class="a3">
+                    <h2 class="featurette-heading">Love & Lemons</h2>
+                    <p class="lead">Welcome to Love and Lemons! My name is Jeanine, and I created Love and Lemons to celebrate how nourishing, fun, and delicious cooking with seasonal fruits ....</p>
+                </a>
+            </div>
+            <div class="col-md-5 bg-image ">
+                <img src="https://source.unsplash.com/500x300/?food blogs"
+                    class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto " alt="...">
+
+            </div>
+        </div>
+
+        <!-- 4 blog -->
+        <div
+            class="row featurette d-flex justify-content-center align-items-center my-4 shadow-lg p-3 mb-5 bg-body rounded">
+            <div class="col-md-7 order-md-2 ">
+                <a href="https://damndelicious.net/" target="_blank" class="a2">
+                    <h2 class="featurette-heading">Damn Delicious</h2>
+                    <p class="lead">Damn Delicious® was simply a hobby, but now it’s my full-time job.
+
+                        Coming from a very traditional Korean household, I was destined to be one of three things....</p>
+                </a>
+            </div>
+            <div class="col-md-5 order-md-1 ">
+
+                <img src="https://source.unsplash.com/500x300/?pizza"
+                    class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto " alt="...">
+            </div>
+        </div>
+
+        <!-- 5 blog -->
+        <div
+            class="row featurette d-flex justify-content-center align-items-center my-4  shadow-lg p-3 mb-5 bg-body rounded">
+            <div class="col-md-7 ">
+                <a href="https://www.spendwithpennies.com/" target="_blank" class="a3">
+                    <h2 class="featurette-heading">Spend With Pennies</h2>
+                    <p class="lead">Easy home cooked comfort.
+                        Welcome to Spend With Pennies! Here you will find deliciously simple recipes for the every day home cook...</p>
+                </a>
+            </div>
+            <div class="col-md-5 bg-image ">
+                <img src="https://source.unsplash.com/500x300/?burger"
+                    class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto " alt="...">
+
+            </div>
+        </div>
+
+
+        <!-- 6 blog -->
+        <div
+            class="row featurette d-flex justify-content-center align-items-center my-4 shadow-lg p-3 mb-5 bg-body rounded">
+            <div class="col-md-7 order-md-2 ">
+                <a href="https://www.justonecookbook.com/" target="_blank" class="a2">
+                    <h2 class="featurette-heading">Just One Cookbook</h2>
+                    <p class="lead">Just One Cookbook is here to help you cook delicious Japanese food with easy to follow step by step tutorial. Meet the team behind Just One Cookbook...</p>
+                </a>
+            </div>
+            <div class="col-md-5 order-md-1 ">
+
+                <img src="https://source.unsplash.com/500x300/?pasta"
+                    class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto " alt="...">
+            </div>
+        </div>
+
+    </div>
+
+    <!-- FOOTER -->
+
+    <footer class="footer">
+        <div class="footer-left col-md-4 col-sm-6">
+            <p class="about">
+                <span> About the Blogs</span> Ut congue augue non tellus bibendum, in varius tellus condimentum. In
+                scelerisque nibh tortor, sed rhoncus odio condimentum in. Sed sed est ut sapien ultrices eleifend.
+                Integer tellus est, vehicula eu lectus tincidunt,
+                ultricies feugiat leo. Suspendisse tellus elit, pharetra in hendrerit ut, aliquam quis augue. Nam ut
+                nibh mollis, tristique ante sed, viverra massa.
+            </p>
+            <div class="icons">
+
+                <a href="https://www.facebook.com/people/Sultan-Khan/100021116736754/" target="_blank"
+                    class="fa fa-facebook"></a>
+                <a href="https://www.instagram.com/psultan2002/?utm_medium=copy_link" target="_blank"
+                    class="fa fa-instagram"></a>
+
+
+            </div>
+        </div>
+
+        <div class="footer-right col-md-4 col-sm-6">
+            <!-- <h2> Company<span> logo</span></h2>
+      <p class="menu">
+        <a href="#"> Home</a> |
+        <a href="#"> About</a> |
+        <a href="#"> Services</a> |
+        <a href="#"> Portfolio</a> |
+        <a href="#"> News</a> |
+        <a href="#"> Contact</a>
+      </p>
+      <p class="name"> Company Name &copy; 2016</p> -->
+        </div>
+
+        <div class="footer-center col-md-4 col-sm-6">
+            <div>
+                <i class="fa fa-map-marker"></i>
+                <p><span> B-2 ,Sultana park ,fatehwadi </span> Ahmedabad, Gujarat</p>
+            </div>
+            <div>
+                <i class="fa fa-phone"></i>
+                <p> (+91) 9601382718</p>
+            </div>
+            <div>
+                <i class="fa fa-envelope"></i>
+                <p><a href="#"> puvesh2002@gmail.com</a></p>
+            </div>
+        </div>
+
+    </footer>
+
+
+</body>
+
+</html>

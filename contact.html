@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="footer.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+
+    <title>Recent Blogs</title>
+</head>
+
+<style>
+    /* .row:hover:before,
+    .row:hover:after {
+        transform: translate(0,0);
+        opacity: 1;
+    } */
+    .mb-3 {
+        transition: transform 500ms ease-in-out 25ms;
+        opacity: 2;
+    }
+
+    .mb-3:hover {
+        transform: translateX(10px) translateY(10px);
+    }
+
+    .container {
+        opacity: 1;
+    }
+</style>
+
+<body>
+
+    <!-- Navigation Bar -->
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">FoodBlog</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02"
+                aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="recent.html">Resent Blogs</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+                <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Contact Us form -->
+    <div class="container col-md-6 my-4 ">
+        <h2 class=""><b>Contact Us</b></h2>
+    </div>
+    <div class="container col-md-6 my-4 shadow-lg p-3 mb-5 bg-body rounded">
+
+
+        <div class="mb-3 shadow-lg p-3 mb-5 bg-body rounded">
+            <label for="formGroupExampleInput" class="form-label"><b>First Name </b></label>
+            <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Enter your First Name">
+        </div>
+        <div class="mb-3 shadow-lg p-3 mb-5 bg-body rounded">
+            <label for="formGroupExampleInput2" class="form-label"><b>Last Name </b></label>
+            <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Enetr your Last Name">
+        </div>
+        <div class="mb-3 shadow-lg p-3 mb-5 bg-body rounded">
+            <label for="exampleFormControlInput1" class="form-label"><b>E-mail address </b></label>
+            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+        </div>
+        <div class="mb-3 shadow-lg p-3 mb-5 bg-body rounded">
+            <label for="exampleFormControlTextarea1" class="form-label"><b>Enetr your Query </b></label>
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+        </div>
+        <div class="btn btn-primary">Submit</div>
+    </div>
+
+    <!-- FOOTER -->
+
+    <footer class="footer">
+        <div class="footer-left col-md-4 col-sm-6">
+            <p class="about">
+                <span> About the Blogs</span> Ut congue augue non tellus bibendum, in varius tellus condimentum. In
+                scelerisque nibh tortor, sed rhoncus odio condimentum in. Sed sed est ut sapien ultrices eleifend.
+                Integer tellus est, vehicula eu lectus tincidunt,
+                ultricies feugiat leo. Suspendisse tellus elit, pharetra in hendrerit ut, aliquam quis augue. Nam ut
+                nibh mollis, tristique ante sed, viverra massa.
+            </p>
+            <div class="icons">
+
+                <a href="https://www.facebook.com/people/Sultan-Khan/100021116736754/" target="_blank"
+                    class="fa fa-facebook"></a>
+                <a href="https://www.instagram.com/psultan2002/?utm_medium=copy_link" target="_blank"
+                    class="fa fa-instagram"></a>
+
+
+            </div>
+        </div>
+
+        <div class="footer-right col-md-4 col-sm-6">
+            <!-- <h2> Company<span> logo</span></h2>
+      <p class="menu">
+        <a href="#"> Home</a> |
+        <a href="#"> About</a> |
+        <a href="#"> Services</a> |
+        <a href="#"> Portfolio</a> |
+        <a href="#"> News</a> |
+        <a href="#"> Contact</a>
+      </p>
+      <p class="name"> Company Name &copy; 2016</p> -->
+        </div>
+
+        <div class="footer-center col-md-4 col-sm-6">
+            <div>
+                <i class="fa fa-map-marker"></i>
+                <p><span> B-2 ,Sultana park ,fatehwadi </span> Ahmedabad, Gujarat</p>
+            </div>
+            <div>
+                <i class="fa fa-phone"></i>
+                <p> (+91) 9601382718</p>
+            </div>
+            <div>
+                <i class="fa fa-envelope"></i>
+                <p><a href="#"> puvesh2002@gmail.com</a></p>
+            </div>
+        </div>
+
+    </footer>
+
+
+
+
+</body>
+
+</html>
